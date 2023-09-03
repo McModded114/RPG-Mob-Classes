@@ -1,0 +1,1758 @@
+{
+  "mod_elements": [
+    {
+      "name": "CalculatingAttributeModifiers",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "calculating_attribute_modifiers",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/CalculatingAttributeModifiersProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Global Triggers"
+    },
+    {
+      "name": "HpBelowQuarter",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hp_below_quarter",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/HpBelowQuarterProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "Goblin",
+      "type": "animatedentity",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goblin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/entity/GoblinEntity.java",
+          "src/main/java/net/mcmodded/rpgmobclasses/entity/model/GoblinModel.java",
+          "src/main/resources/data/rpg_mob_classes/forge/biome_modifier/goblin_biome_modifier.json",
+          "src/main/resources/assets/rpg_mob_classes/models/item/goblin_spawn_egg.json",
+          "src/main/java/net/mcmodded/rpgmobclasses/client/renderer/GoblinRenderer.java"
+        ]
+      },
+      "path": "~/Goblin"
+    },
+    {
+      "name": "HpAboveQuarter",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hp_above_quarter",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/HpAboveQuarterProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "GoblinAttack",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "goblin_attack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/GoblinAttackProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Goblin"
+    },
+    {
+      "name": "MimicAttack",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mimic_attack",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/MimicAttackProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "damagesource",
+            "type": "damagesource"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Mimic"
+    },
+    {
+      "name": "Mimic",
+      "type": "animatedentity",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mimic",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rpg_mob_classes/models/item/mimic_spawn_egg.json",
+          "src/main/java/net/mcmodded/rpgmobclasses/entity/MimicEntity.java",
+          "src/main/java/net/mcmodded/rpgmobclasses/entity/model/MimicModel.java",
+          "src/main/resources/data/rpg_mob_classes/forge/biome_modifier/mimic_biome_modifier.json",
+          "src/main/java/net/mcmodded/rpgmobclasses/client/renderer/MimicRenderer.java"
+        ]
+      },
+      "path": "~/Mimic"
+    },
+    {
+      "name": "MimicIsDisguised",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mimic_is_disguised",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/MimicIsDisguisedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "MimicHurt",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mimic_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/MimicHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "BecomeKnight",
+      "type": "procedure",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "become_knight",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/BecomeKnightProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes/Become Class"
+    },
+    {
+      "name": "BecomeMage",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "become_mage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/BecomeMageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes/Become Class"
+    },
+    {
+      "name": "Strength",
+      "type": "attribute",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strength",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Rpg Classes/Attributes"
+    },
+    {
+      "name": "Defense",
+      "type": "attribute",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "defense",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Rpg Classes/Attributes"
+    },
+    {
+      "name": "FireDamage",
+      "type": "attribute",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire_damage",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Rpg Classes/Attributes"
+    },
+    {
+      "name": "Mana",
+      "type": "attribute",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mana",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Rpg Classes/Attributes"
+    },
+    {
+      "name": "MaxMana",
+      "type": "attribute",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "max_mana",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Rpg Classes/Attributes"
+    },
+    {
+      "name": "SetClass",
+      "type": "gui",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_class",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/client/gui/SetClassScreen.java",
+          "src/main/java/net/mcmodded/rpgmobclasses/network/SetClassButtonMessage.java",
+          "src/main/java/net/mcmodded/rpgmobclasses/world/inventory/SetClassMenu.java"
+        ]
+      },
+      "path": "~/Rpg Classes/Become Class"
+    },
+    {
+      "name": "PlayerSetClass",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_set_class",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/PlayerSetClassProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes"
+    },
+    {
+      "name": "Lvl",
+      "type": "attribute",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lvl",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Rpg Classes/Attributes"
+    },
+    {
+      "name": "Xp",
+      "type": "attribute",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Rpg Classes/Attributes"
+    },
+    {
+      "name": "PlayerRespawnSetClass",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_respawn_set_class",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/PlayerRespawnSetClassProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes"
+    },
+    {
+      "name": "CritChance",
+      "type": "attribute",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crit_chance",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Rpg Classes/Attributes"
+    },
+    {
+      "name": "CritDamage",
+      "type": "attribute",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crit_damage",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Rpg Classes/Attributes"
+    },
+    {
+      "name": "DroppedXp",
+      "type": "attribute",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dropped_xp",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Rpg Classes/Attributes"
+    },
+    {
+      "name": "XpFromMobs",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xp_from_mobs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/XpFromMobsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes"
+    },
+    {
+      "name": "ClassInfo",
+      "type": "gui",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "class_info",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/client/gui/ClassInfoScreen.java",
+          "src/main/java/net/mcmodded/rpgmobclasses/world/inventory/ClassInfoMenu.java"
+        ]
+      },
+      "path": "~/Rpg Classes/ClassInfo"
+    },
+    {
+      "name": "DisplayPlayer",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_player",
+      "metadata": {
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/DisplayPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes/ClassInfo"
+    },
+    {
+      "name": "ClassInfoItem",
+      "type": "item",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "class_info_item",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/item/ClassInfoItemItem.java",
+          "src/main/resources/assets/rpg_mob_classes/models/item/class_info_item.json"
+        ]
+      },
+      "path": "~/Rpg Classes"
+    },
+    {
+      "name": "SkillsInfoItem",
+      "type": "item",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "skills_info_item",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rpg_mob_classes/models/item/skills_info_item.json",
+          "src/main/java/net/mcmodded/rpgmobclasses/item/SkillsInfoItemItem.java"
+        ]
+      },
+      "path": "~/Rpg Classes"
+    },
+    {
+      "name": "MobStatModifiers",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mob_stat_modifiers",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/MobStatModifiersProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes"
+    },
+    {
+      "name": "InitalMobStats",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "inital_mob_stats",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/InitalMobStatsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes"
+    },
+    {
+      "name": "DamageCalculation",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "damage_calculation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/DamageCalculationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes"
+    },
+    {
+      "name": "ProjectileDamage",
+      "type": "attribute",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "projectile_damage",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Rpg Classes/Attributes"
+    },
+    {
+      "name": "SwordSkill",
+      "type": "attribute",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sword_skill",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Rpg Classes/Attributes"
+    },
+    {
+      "name": "Basespeed",
+      "type": "attribute",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basespeed",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Rpg Classes/Attributes"
+    },
+    {
+      "name": "Speed",
+      "type": "attribute",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "speed",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Rpg Classes/Attributes"
+    },
+    {
+      "name": "MageDmg",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mage_dmg",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/MageDmgProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes"
+    },
+    {
+      "name": "GetStrength",
+      "type": "procedure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_strength",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/GetStrengthProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes/ClassInfo"
+    },
+    {
+      "name": "GetSpeed",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_speed",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/GetSpeedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes/ClassInfo"
+    },
+    {
+      "name": "BecomeScout",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "become_scout",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/BecomeScoutProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes/Become Class"
+    },
+    {
+      "name": "GetDefense",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_defense",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/GetDefenseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes/ClassInfo"
+    },
+    {
+      "name": "InfoItemUse",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "info_item_use",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/InfoItemUseProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes"
+    },
+    {
+      "name": "OnCraft",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_craft",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/OnCraftProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes"
+    },
+    {
+      "name": "GetLv",
+      "type": "procedure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_lv",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/GetLvProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes/ClassInfo"
+    },
+    {
+      "name": "GetXp",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_xp",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/GetXpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes/ClassInfo"
+    },
+    {
+      "name": "GetDroppedXp",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_dropped_xp",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/GetDroppedXpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes/ClassInfo"
+    },
+    {
+      "name": "BecomeBlacksmith",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "become_blacksmith",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/BecomeBlacksmithProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes/Become Class"
+    },
+    {
+      "name": "SmithingSkill",
+      "type": "attribute",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smithing_skill",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Rpg Classes/Attributes"
+    },
+    {
+      "name": "GetClass",
+      "type": "procedure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_class",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/GetClassProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes/ClassInfo"
+    },
+    {
+      "name": "BecomeBerserker",
+      "type": "procedure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "become_berserker",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/BecomeBerserkerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes/Become Class"
+    },
+    {
+      "name": "Rage",
+      "type": "attribute",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rage",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Rpg Classes/Attributes"
+    },
+    {
+      "name": "BerserkerRage",
+      "type": "procedure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "berserker_rage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/BerserkerRageProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes"
+    },
+    {
+      "name": "Basemaxhp",
+      "type": "attribute",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basemaxhp",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Rpg Classes/Attributes"
+    },
+    {
+      "name": "Basedmg",
+      "type": "attribute",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basedmg",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Rpg Classes/Attributes"
+    },
+    {
+      "name": "Xploss",
+      "type": "attribute",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "xploss",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Rpg Classes/Attributes"
+    },
+    {
+      "name": "CloseGui",
+      "type": "procedure",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "close_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/CloseGuiProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes/Become Class"
+    },
+    {
+      "name": "GetLvAndXp",
+      "type": "procedure",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_lv_and_xp",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/GetLvAndXpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes/ClassInfo"
+    },
+    {
+      "name": "DefenseCalculation",
+      "type": "procedure",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "defense_calculation",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/DefenseCalculationProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes"
+    },
+    {
+      "name": "AnimalXp",
+      "type": "procedure",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "animal_xp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/AnimalXpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes"
+    },
+    {
+      "name": "OpenGuiSetProfession",
+      "type": "procedure",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "open_gui_set_profession",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/OpenGuiSetProfessionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes/Become Class"
+    },
+    {
+      "name": "SetProfession",
+      "type": "gui",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_profession",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/world/inventory/SetProfessionMenu.java",
+          "src/main/java/net/mcmodded/rpgmobclasses/client/gui/SetProfessionScreen.java",
+          "src/main/java/net/mcmodded/rpgmobclasses/network/SetProfessionButtonMessage.java"
+        ]
+      },
+      "path": "~/Rpg Classes/Become Class"
+    },
+    {
+      "name": "DroppedXpToLv",
+      "type": "attribute",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dropped_xp_to_lv",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Rpg Classes/Attributes"
+    },
+    {
+      "name": "IceDamage",
+      "type": "attribute",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ice_damage",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Rpg Classes/Attributes"
+    },
+    {
+      "name": "VoidDamage",
+      "type": "attribute",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "void_damage",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Rpg Classes/Attributes"
+    },
+    {
+      "name": "MagicDamage",
+      "type": "attribute",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_damage",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Rpg Classes/Attributes"
+    },
+    {
+      "name": "SonicBoomBeam",
+      "type": "procedure",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sonic_boom_beam",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/SonicBoomBeamProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes/Class Items/Warden"
+    },
+    {
+      "name": "SonicBoomWand",
+      "type": "item",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sonic_boom_wand",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rpg_mob_classes/models/item/sonic_boom_wand.json",
+          "src/main/java/net/mcmodded/rpgmobclasses/item/SonicBoomWandItem.java"
+        ]
+      },
+      "path": "~/Rpg Classes/Class Items/Warden"
+    },
+    {
+      "name": "WardenDies",
+      "type": "procedure",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "warden_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/WardenDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes/Class Loot"
+    },
+    {
+      "name": "SonicBoomAxe",
+      "type": "item",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sonic_boom_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/rpg_mob_classes/models/item/sonic_boom_axe.json",
+          "src/main/java/net/mcmodded/rpgmobclasses/item/SonicBoomAxeItem.java"
+        ]
+      },
+      "path": "~/Rpg Classes/Class Items/Warden"
+    },
+    {
+      "name": "CustomItemLoseDurability",
+      "type": "procedure",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "custom_item_lose_durability",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/CustomItemLoseDurabilityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes/Class Items/Warden"
+    },
+    {
+      "name": "GetProfession",
+      "type": "procedure",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "get_profession",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/GetProfessionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes/ClassInfo"
+    },
+    {
+      "name": "SyncNbt",
+      "type": "procedure",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sync_nbt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/SyncNbtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes"
+    },
+    {
+      "name": "NormalAttack",
+      "type": "procedure",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "normal_attack",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "amount",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Geckolib Attacks"
+    },
+    {
+      "name": "Wands",
+      "type": "tag",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wands",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/items/wands.json"
+        ]
+      },
+      "path": "~/Tags"
+    },
+    {
+      "name": "BasicWand",
+      "type": "item",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_wand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/item/BasicWandItem.java",
+          "src/main/resources/assets/rpg_mob_classes/models/item/basic_wand.json"
+        ]
+      },
+      "path": "~/Rpg Classes/Class Items/Cherry"
+    },
+    {
+      "name": "BasicBeam",
+      "type": "procedure",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basic_beam",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/BasicBeamProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes/Class Items/Cherry"
+    },
+    {
+      "name": "CherryWand",
+      "type": "item",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cherry_wand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/item/CherryWandItem.java",
+          "src/main/resources/assets/rpg_mob_classes/models/item/cherry_wand.json"
+        ]
+      },
+      "path": "~/Rpg Classes/Class Items/Cherry"
+    },
+    {
+      "name": "CherryBeam",
+      "type": "procedure",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cherry_beam",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcmodded/rpgmobclasses/procedures/CherryBeamProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Rpg Classes/Class Items/Cherry"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "difficulty_modifier",
+      "type": "number",
+      "scope": "map",
+      "value": "1.0"
+    },
+    {
+      "name": "classRpgSync",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": "\"\""
+    },
+    {
+      "name": "ProfessionSync",
+      "type": "string",
+      "scope": "player_lifetime",
+      "value": "\"\""
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.rpg_mob_classes.goblin_spawn_egg": "Goblin Spawn Egg",
+      "entity.rpg_mob_classes.goblin": "Goblin",
+      "attribute.rpg_mob_classes.xploss": "Xp Loss",
+      "attribute.rpg_mob_classes.mana": "Mana",
+      "item.rpg_mob_classes.sonic_boom_axe": "Sculk Greataxe of the Warden",
+      "item.rpg_mob_classes.class_info_item": "Class Info Reader",
+      "attribute.rpg_mob_classes.rage": "Rage",
+      "death.attack.eaten.player.item": "%1$s was eaten by %2$s",
+      "attribute.rpg_mob_classes.dropped_xp_to_lv": "Dropped Xp Lv Conversion",
+      "attribute.rpg_mob_classes.magic_damage": "Magic Damage",
+      "attribute.rpg_mob_classes.speed": "Speed",
+      "item.rpg_mob_classes.skills_info_item": "Skill Info Reader",
+      "attribute.rpg_mob_classes.ice_damage": "Ice Damage",
+      "attribute.rpg_mob_classes.lvl": "Lv",
+      "attribute.rpg_mob_classes.smithing_skill": "Smithing Skill",
+      "attribute.rpg_mob_classes.crit_chance": "Critical Chance",
+      "attribute.rpg_mob_classes.max_mana": "Max Mana",
+      "attribute.rpg_mob_classes.sword_skill": "Sword Skill",
+      "attribute.rpg_mob_classes.basespeed": "Base Speed (Don\u0027t Edit)",
+      "death.attack.eaten": "%1$s was eaten",
+      "death.attack.rpgMob.player": "%1$s was slain by %2$s",
+      "death.attack.rpgMob.player.item": "%1$s was slain by %2$s using %3$s",
+      "death.attack.eaten.player": "%1$s was eaten by %2$s",
+      "attribute.rpg_mob_classes.basedmg": "Base Dmg (Don\u0027t Edit)",
+      "item.rpg_mob_classes.cherry_wand": "Cherry Wand",
+      "item.rpg_mob_classes.mimic_spawn_egg": "Mimic Spawn Egg",
+      "attribute.rpg_mob_classes.fire_damage": "Fire Damage",
+      "attribute.rpg_mob_classes.basemaxhp": "Base Max Hp (Don\u0027t Edit)",
+      "attribute.rpg_mob_classes.strength": "Strength",
+      "entity.rpg_mob_classes.mimic": "Mimic",
+      "attribute.rpg_mob_classes.crit_damage": "Critical Damage",
+      "attribute.rpg_mob_classes.dropped_xp": "Dropped Xp",
+      "attribute.rpg_mob_classes.defense": "Defense",
+      "attribute.rpg_mob_classes.void_damage": "Void Damage",
+      "item.rpg_mob_classes.sonic_boom_wand": "Sonic Scepter of the Warden",
+      "attribute.rpg_mob_classes.projectile_damage": "Projectile Damage",
+      "gui.rpg_mob_classes.set_profession.label_select_profession": "Select Profession",
+      "item.rpg_mob_classes.basic_wand": "Basic Wand",
+      "death.attack.rpgMob": "%1$s was slain",
+      "gui.rpg_mob_classes.set_class.label_select_class": "Select Class",
+      "attribute.rpg_mob_classes.xp": "Xp"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Global Triggers",
+        "children": []
+      },
+      {
+        "name": "Geckolib Attacks",
+        "children": []
+      },
+      {
+        "name": "Procedures",
+        "children": []
+      },
+      {
+        "name": "Rpg Classes",
+        "children": [
+          {
+            "name": "Attributes",
+            "children": []
+          },
+          {
+            "name": "Become Class",
+            "children": []
+          },
+          {
+            "name": "ClassInfo",
+            "children": []
+          },
+          {
+            "name": "Class Items",
+            "children": [
+              {
+                "name": "Warden",
+                "children": []
+              },
+              {
+                "name": "Cherry",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Class Loot",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Tags",
+        "children": []
+      },
+      {
+        "name": "Mimic",
+        "children": []
+      },
+      {
+        "name": "Goblin",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "rpg_mob_classes",
+    "modName": "RPG Mob Classes",
+    "version": "1.2.0",
+    "description": "Adds classes, mana, mob stats system, difficulty system and more!",
+    "author": "McModded114",
+    "websiteURL": "https://curseforge.com/minecraft/mc-mods/rpg-mob-classes",
+    "license": "All Rights Reserved",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "rpg_mob_classes_logo",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "geckolib",
+      "allmods"
+    ],
+    "currentGenerator": "forge-1.19.4",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcmodded.rpgmobclasses",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300335319
+}

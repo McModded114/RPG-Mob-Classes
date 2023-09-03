@@ -1,0 +1,36 @@
+modLoader="javafml"
+loaderVersion="[45,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="rpg_mob_classes"
+version="1.2.0"
+displayName="RPG Mob Classes"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+displayURL="https://curseforge.com/minecraft/mc-mods/rpg-mob-classes"
+logoFile="logo.png"
+authors="McModded114"
+description="Adds classes, mana, mob stats system, difficulty system and more!"
+
+[[dependencies.rpg_mob_classes]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.4]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+[[dependencies.rpg_mob_classes]]
+    modId="geckolib"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.rpg_mob_classes]]
+    modId="allmods"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+

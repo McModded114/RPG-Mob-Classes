@@ -1,0 +1,50 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.mimic",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "all",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "base",
+					"parent": "all",
+					"pivot": [-8, 0, 8],
+					"rotation": [180.00042, 0, 0],
+					"cubes": [
+						{"origin": [-7, -9, 9], "size": [14, 9, 14], "uv": [0, 19]},
+						{"origin": [-6.5, -11, 22], "size": [13, 2, 0], "uv": [0, 60]},
+						{"origin": [-11.5, -11, 16.25], "size": [11, 2, 0], "pivot": [-6.5, -9, 16], "rotation": [0, -90, 0], "uv": [2, 60]},
+						{"origin": [-11.5, -11, 2.75], "size": [11, 2, 0], "pivot": [-6.5, -9, 16], "rotation": [0, -90, 0], "uv": [2, 60]}
+					]
+				},
+				{
+					"name": "lid_r1",
+					"parent": "all",
+					"pivot": [0, 9, 6],
+					"rotation": [180, 0, 0],
+					"cubes": [
+						{"origin": [-7, 4, 5], "size": [14, 5, 14], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "knob_r1",
+					"parent": "lid_r1",
+					"pivot": [0, 7, 7],
+					"cubes": [
+						{"origin": [-1, 7, 19], "size": [2, 4, 1], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

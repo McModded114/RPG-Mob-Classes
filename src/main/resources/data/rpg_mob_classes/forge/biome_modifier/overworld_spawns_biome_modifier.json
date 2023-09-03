@@ -1,0 +1,18 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "#minecraft:is_overworld",
+  "spawners": [
+    {
+      "type": "rpg_weapon_stats:goblin",
+      "maxCount": 3,
+      "minCount": 1,
+      "weight": 10
+    },
+    {
+      "type": "rpg_weapon_stats:mimic",
+      "maxCount": 1,
+      "minCount": 1,
+      "weight": 5
+    }
+  ]
+}

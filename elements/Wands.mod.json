@@ -1,0 +1,24 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:SonicBoomWand"
+      },
+      {
+        "value": "CUSTOM:BasicWand"
+      },
+      {
+        "value": "CUSTOM:CherryWoodWand"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "wands",
+    "namespace": "forge"
+  }
+}
